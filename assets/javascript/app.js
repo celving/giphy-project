@@ -20,11 +20,11 @@ $(document).ready(function() {
 
         image.attr("img-state", "still");
 
-        image.attr("img-still", response.data[i].images.fixed_height_still.url);
+        image.attr("img-still", response.data[i].images.fixed_width_still.url);
 
-        image.attr("img-animate", response.data[i].images.fixed_height.url);
+        image.attr("img-animate", response.data[i].images.fixed_width.url);
 
-        image.attr("src", response.data[i].images.fixed_height_still.url);
+        image.attr("src", response.data[i].images.fixed_width_still.url);
 
         $("#image-area").prepend(image);
     }

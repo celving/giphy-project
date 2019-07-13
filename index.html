@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gif Madness</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div id="button-area"></div>
-    <div id="image-area"></div>
+    <div class="container-fluid px-0">
+        <div class="row-md-2">
+            <h2 class="bg-dark text-white text-center py-2">Gif Madness</h2>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 pl-4">
+                <div class="row-md-3 border-bottom">
+                    <h4>Add buttons here</h4>
+                    <form class="pb-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="button-input"
+                                placeholder="Enter any word to make your own button!">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </form>
+                </div>
+                <div class="row-md-9 pt-3">
+                    <div id="button-area">
+                        <button>Here is a button</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 border-left">
+                <div id="image-area">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
