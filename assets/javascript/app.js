@@ -45,7 +45,7 @@ $("#submit").on("click", function () {
 });
 
 
-$(".search-button").on("click", function () {
+$("#button-area").on("click", ".search-button", function () {
 
   console.log("hello")
 
@@ -97,7 +97,7 @@ $(".search-button").on("click", function () {
     };
 
     //function to start/stop gifs//
-    $(".gif").click(function () {
+    $(".gif").on("click", function () {
       var state = $(this).attr("img-state");
       if (state === "still") {
         $(this).attr("src", $(this).attr("img-animate"));
